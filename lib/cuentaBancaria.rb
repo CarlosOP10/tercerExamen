@@ -5,4 +5,7 @@ class CuentaBancaria
     def getSaldo
         return @cuenta
     end
+    def deposito(numero)
+        @cuenta=@cuenta+numero
+    end
 end
