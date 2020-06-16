@@ -3,5 +3,5 @@ Given('visito la pagina principal') do
 end
   
 Then('observo el mensaje {string}') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+    last_response.body.should =~ /#{string}/m
 end
