@@ -13,4 +13,9 @@ RSpec.describe CuentaBancaria do
         @cuenta.deposito(10)
         expect(@cuenta.getSaldo()).to eq(10)
     end
+    it "Deberia devolver la cuenta en 0" do
+        #@cuenta=CuentaBancaria.new
+        @cuenta.retiro(10)
+        expect(@cuenta.getSaldo()).to eq(0)
+    end
 end

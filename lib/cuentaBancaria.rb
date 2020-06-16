@@ -8,4 +8,7 @@ class CuentaBancaria
     def deposito(numero)
         @cuenta=@cuenta+numero
     end
+    def retiro(numero)
+        @cuenta=@cuenta-numero
+    end
 end
